@@ -1,1 +1,19 @@
 // Mixins Here
+
+.flexColumn() {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signupButton(@fcolor, @bgColor) {
+  color: @fcolor;
+  background-color: @bgColor;
+  width: 30%;
+  height: 6%;
+  font-size: 1.7em;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 2%;
+  font-weight: 900;
+}
