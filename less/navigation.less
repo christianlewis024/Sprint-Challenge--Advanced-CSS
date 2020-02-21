@@ -1,1 +1,85 @@
 // Navigation code here
+nav {
+  .flexColumn();
+  position: fixed;
+  top: 0;
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.692);
+
+  h1 {
+    font-size: 4rem;
+    margin: 1%;
+  }
+  padding-bottom: 1%;
+  @media @phone {
+    padding-bottom: 0;
+  }
+}
+.navLinks {
+  width: 43%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2%;
+  @media @phone {
+    width: 90%;
+  }
+}
+a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: @waterloo;
+}
+a:link {
+  color: @waterloo;
+  text-decoration: none;
+}
+
+a:visited {
+  color: @waterloo;
+}
+
+a:hover {
+  color: @waterloo;
+}
+
+a:active {
+  color: @waterloo;
+}
+
+.intro img {
+  width: 100%;
+  @media @phone {
+    margin-top: 10%;
+  }
+}
+
+@keyframes banner {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.intro img {
+  width: 100%;
+  position: relative;
+
+  animation-name: banner;
+  animation-duration: 5s;
+}
